@@ -3,6 +3,7 @@ import Navbar from '../../../../components/Navbar';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import Image from 'next/image'; // Import Next.js Image component
 
 const ContactPage = () => {
   const links = [
@@ -51,10 +52,12 @@ const ContactPage = () => {
             </p>
           </div>
           <div className='flex items-center justify-center'>
-            <img
+            <Image
               src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F9fd5aba8692d70cefef4b3581c1daecf.cdn.bubble.io%2Ff1716203855200x456764148234407200%2Fa-vivid-3d-illustration-of-a-popular-instagram-cre-SVG94gj7RZaLGYxXV0-09Q-s2qXJZAERfqgCbV9V-RnEQ.jpeg?w=512&h=512&auto=compress&dpr=1&fit=max"
               alt="Profile"
               className='rounded-2xl w-2/3 md:w-[70%] mx-auto'
+              width={512} // Set appropriate width
+              height={512} // Set appropriate height
             />
           </div>
         </div>
