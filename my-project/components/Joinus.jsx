@@ -1,7 +1,12 @@
-"use client"; // Ensure this line is present if using the "use client" directive
+"use client";
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
+import signup from "../public/signup.gif";
+import build from "../public/build.gif";
+import call from "../public/call.gif";
+import earngraph from "../public/earngraph.gif";
 
 const Joinus = () => {
   const router = useRouter();
@@ -19,8 +24,7 @@ const Joinus = () => {
               Start Vybing with us!
             </h3>
             <p className="font-sans text-lg font-medium text-white ml-5">
-              "We help influencers make money by monetizing their travel plans,
-              merchandise, digital goods, and more."
+              &quot;We help influencers make money by monetizing their travel plans, merchandise, digital goods, and more.&quot;
             </p>
           </div>
           <button
@@ -45,14 +49,14 @@ const Joinus = () => {
                 Sign Up and create your own store hassle-free.
               </h4>
               <p className="font-sans text-lg font-medium text-gray-800 ml-5">
-                Join us via Google Sign-In and verify your influencer status by
-                entering your social media ID and unlock your store at zero
-                cost.
+                Join us via Google Sign-In and verify your influencer status by entering your social media ID and unlock your store at zero cost.
               </p>
-              <img
-                src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F9fd5aba8692d70cefef4b3581c1daecf.cdn.bubble.io%2Ff1717493729973x154150708018341730%2F4.gif?w=384&h=843&auto=compress&dpr=1&fit=max"
+              <Image
+                src={signup}
                 alt="Step 1"
-                className="rounded-lg w-[250px] h-full ml-[25%] "
+                className="rounded-lg w-[250px] h-full ml-[25%]"
+                width={250} // Set appropriate width
+                height={843} // Set appropriate height
               />
             </div>
           </div>
@@ -70,13 +74,14 @@ const Joinus = () => {
                 Build & customize your store front.
               </h4>
               <p className="font-sans text-lg font-medium text-gray-800 ml-5">
-                Simply fill in the details to build your digital store. Once
-                done, start selling your products to your audience.
+                Simply fill in the details to build your digital store. Once done, start selling your products to your audience.
               </p>
-              <img
-                src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F9fd5aba8692d70cefef4b3581c1daecf.cdn.bubble.io%2Ff1717493756784x453901144404817540%2F1.gif?w=384&h=843&auto=compress&dpr=1&fit=max"
+              <Image
+                src={build}
                 alt="Step 2"
-                className="rounded-lg w-[250px] h-full ml-[25%] "
+                className="rounded-lg w-[250px] h-full ml-[25%]"
+                width={250} // Set appropriate width
+                height={843} // Set appropriate height
               />
             </div>
           </div>
@@ -91,21 +96,22 @@ const Joinus = () => {
             </div>
             <div className="flex flex-col gap-4 bg-[#E5F0F1] p-6 rounded-2xl shadow-lg mt-10 mr-20">
               <h4 className="font-sans text-2xl font-bold text-gray-800 ml-5">
-                Call the audience to your store. Easily integrate links into
-                content.
+                Call the audience to your store. Easily integrate links into content.
               </h4>
               <p className="font-sans text-lg font-medium text-gray-800 ml-5">
-                After setting up your products, its time to go public. Put your
-                store link in insta bio and lets make first post together !
+                After setting up your products, its time to go public. Put your store link in insta bio and lets make first post together!
               </p>
-              <img
-                src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F9fd5aba8692d70cefef4b3581c1daecf.cdn.bubble.io%2Ff1717493793142x205484277914075520%2F3.gif?w=384&h=843&auto=compress&dpr=1&fit=max"
+              <Image
+                src={call}
                 alt="Step 3"
-                className="rounded-lg w-[250px] h-full ml-[25%] "
+                className="rounded-lg w-[250px] h-full ml-[25%]"
+                width={250} // Set appropriate width
+                height={843} // Set appropriate height
               />
             </div>
           </div>
 
+          {/* Step 4 */}
           <div className="flex items-start gap-4">
             <div className="flex flex-col items-center mt-10">
               <div className="bg-teal-900 flex items-center justify-center w-14 h-14 rounded-lg font-urbanist text-2xl font-bold text-white">
@@ -114,16 +120,17 @@ const Joinus = () => {
             </div>
             <div className="flex flex-col gap-4 bg-[#E5F0F1] p-6 rounded-2xl shadow-lg mt-10 mr-20">
               <h4 className="font-sans text-2xl font-bold text-gray-800 ml-5">
-                "Monetize your influencer status: Earn money adding real value
-                to your true followers!"
+                &quot;Monetize your influencer status: Earn money adding real value to your true followers!&quot;
               </h4>
               <p className="font-sans text-lg font-medium text-gray-800 ml-5">
-                Let VYB the money now !! It's here and withdraw it periodically.
+                Let VYB the money now!! It&apos;s here and withdraw it periodically.
               </p>
-              <img
-                src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F9fd5aba8692d70cefef4b3581c1daecf.cdn.bubble.io%2Ff1717493810587x376390459201151740%2F2.gif?w=384&h=843&auto=compress&dpr=1&fit=max"
+              <Image
+                src={earngraph}
                 alt="Step 4"
-                className="rounded-lg w-[250px] h-full ml-[25%] "
+                className="rounded-lg w-[250px] h-full ml-[25%]"
+                width={250} // Set appropriate width
+                height={843} // Set appropriate height
               />
             </div>
           </div>
